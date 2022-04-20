@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+
+  postgres:
+    image: mdillon/postgis
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=michaelcomposite
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=postgres
